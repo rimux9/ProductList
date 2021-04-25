@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Transaction;
+use App\Models\Transaction;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class TransactionsImport implements ToModel

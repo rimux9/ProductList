@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model
 {
     use HasFactory;
-    protected $table = 'transactions_data';
+    protected $table = 'excel';
     protected $guarded = array();
 }

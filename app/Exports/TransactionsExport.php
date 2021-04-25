@@ -24,13 +24,13 @@ class TransactionsExport implements FromCollection, WithHeadings, WithMapping
         ];
     }
 
-    public function map($transaction): array
+    public function map($excel): array
     {
         return [
-            $transaction->id,
-            $transaction->name,
-            $transaction->category,
-            $transaction->descrition,
+            $excel->id,
+            $excel->name,
+            $excel->category,
+            $excel->descrition,
 
         ];
     }
