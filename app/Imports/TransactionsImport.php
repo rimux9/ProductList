@@ -5,6 +5,7 @@ namespace App\Imports;
 use App\Models\Transaction;
 use Maatwebsite\Excel\Concerns\ToModel;
 
+
 class TransactionsImport implements ToModel
 {
 
@@ -14,8 +15,10 @@ class TransactionsImport implements ToModel
             'id'     => $row[0],
             'name'     => $row[1],
             'category'    => $row[2],
-            'description'    => $row[3],
+            'description'    => @$row[3],
 
         ]);
+
     }
+
 }
